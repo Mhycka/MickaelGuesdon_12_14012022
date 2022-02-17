@@ -1,0 +1,32 @@
+#line-chart {
+    box-sizing: border-box;
+    background-color:red;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    position:relative
+   
+  }
+  .linechart-title {
+    margin-left:34px;
+    width:147px;
+    height:48px;
+    font-size: 15px;
+    position:absolute;
+    top:30px;
+    z-index:99;
+  }
+ 
+  .recharts-cartesian-axis-line, .recharts-cartesian-axis-tick-line {
+    stroke:rgba(255,0,0,0)
+  }
+ 
+  .recharts-text, .recharts-cartesian-axis-tick-value, .linechart-title{
+  color:#fbd4d4;
+  fill:#fbd4d4;
+  }
+ 
+ .recharts-line-dots circle{
+    display:none!important;
+  }

@@ -1,0 +1,50 @@
+.sidebar {
+    float:left;
+    background-color: black;
+    width:117px;
+    height:100vh;
+    min-height:1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+  }
+  .sidebar::after {
+    content: "";
+    display: block;
+    clear: both;
+    background-color: black;
+  }
+  
+  
+  .copyright{
+    color:white;
+    transform:rotate(-90deg);
+    white-space:nowrap; 
+    font-size: 12px; 
+  }
+  
+  .icon{
+    width:64px;
+    height:64px;
+    border-radius: 10%;
+    background-size: cover;
+    margin-bottom: 38px;
+  }
+  
+//   #yoga-icon {
+//     background:url("./images/yoga.png");
+//   }
+  
+//   #swim-icon {
+//     background:url("./images/swim.png");
+//   }
+  
+//   #bike-icon {
+//     background:url("./images/bike.png");
+//   }
+  
+//   #lift-icon {
+//     background:url("./images/lift.png");
+//   }
