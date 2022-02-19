@@ -1,34 +1,32 @@
-.activity-title {
-    margin-bottom:280px;
-    left:32px;
-    position:absolute;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
-    border-radius: 5px;
+.activityTitle {
+  margin-bottom:280px;
+  left:32px;
+  position:absolute;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.0212249);
+  border-radius: 5px;
+}
+ 
+.recharts-legend-wrapper{
+  width: 100% !important;
+
+  ul{
+    padding-right:50px;
   }
- 
-  .recharts-legend-wrapper{
-    width: 100% !important;
+}
+  
+.recharts-default-legend{
+  display:flex;
+  justify-content: flex-end;
+
+  li{
+  margin-right:50px!important;
   }
+}
+  
+.recharts-legend-item {
+  margin-left:32px;
+}
  
- .recharts-legend-wrapper ul{
-   padding-right:50px;
- }
- 
- .recharts-default-legend{
-   display:flex;
-   justify-content: flex-end;
- 
- }
- 
- .recharts-default-legend li{
-   margin-right:50px!important;
- }
- 
- .recharts-legend-item {
-   margin-left:32px;
-  }
- 
- .recharts-legend-item-text{
-   color:#74798C!important
-  }
- 
+.recharts-legend-item-text{
+  color:#74798C!important
+}

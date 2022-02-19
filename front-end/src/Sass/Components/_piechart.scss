@@ -1,53 +1,42 @@
-#piechart {
-    background-color:#FBFBFB ;
-    box-sizing: border-box;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  
-    position: relative;
-  }
-  
-  #score-title {
+#pieChart {
+  background-color:#FBFBFB ;
+  box-sizing: border-box;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  #resultTitle {
     position:absolute;
     top:20px;
     font-size: 15px;
     align-self: flex-start;
     margin-left:30px;
-   }
-  
+  }
+
   #result {
-     font-size: 16px;
-     position: absolute;
-     color:#74798c;
-     top:20%;
-     width:162px;
-     height:162px;
-     background-color: white;
-     border-radius: 100%;
-     display:flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-   }
-  
-  #result p {
-    margin:0;
-   }
-   
-  #resultscore {
-     font-size: 26px;
-     color:black;
-   }
-  
-  
-   /* RADARCHART */
-  
-  #radarchart {
-     background-color:#282D30 ;
-   }
-   .recharts-polar-radius-axis-tick text, .recharts-polar-radius-axis line, .recharts-polar-grid-angle line {
-    display:none
-   }
+    font-size: 16px;
+    position: absolute;
+    color:#74798c;
+    top:20%;
+    width:162px;
+    height:162px;
+    background-color: white;
+    border-radius: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin:0;
+    }
+
+    #resultscore {
+      font-size: 26px;
+      color:black;
+    }
+  }
+}
   

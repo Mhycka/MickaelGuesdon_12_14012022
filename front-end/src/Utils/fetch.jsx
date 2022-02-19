@@ -42,7 +42,7 @@ function Fetch(id){
               
             }
            )
-           .then(res => res.json())
+          .then(res => res.json())
           .then(
             (result) => {
               setPerformanceData(result.data);
@@ -69,7 +69,7 @@ function Fetch(id){
             )
 
       },[id] )
-      return { userdata, averageSessionsData,performanceData,activityData, isLoaded, error };
+      return { userdata, averageSessionsData, performanceData, activityData, isLoaded, error };
 }
 
 Fetch.propTypes = {

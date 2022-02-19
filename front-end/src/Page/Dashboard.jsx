@@ -9,31 +9,26 @@ import AsideCard from '../Components/AsideCard';
 
 
 /** Component of the dashboard. It collect the id in the url page, and do a fetch. A loading page is displayed during the fetch. Throw error if needed */
+
+
 function App (){ // 
-
-
-    //Router
-        //Accueil -> choix de l'utilisateur
-            //User -> affiché donnée user
 
     const { id } = useParams();
    
-    const { userdata, averageSessionsData,performanceData, isLoaded,activityData, error } = Fetch(id)
-
-    if (error) {
-        return (<div className="error-message"><i class="fas fa-exclamation-triangle fa-5x"></i><div >Veuillez réactualiser la page...</div></div>);
-    } else if (!isLoaded) {
-        return <div className="container"><div className="loading">Chargement...</div></div>;
+    const { userdata, averageSessionsData,performanceData, isLoaded,activityData} = Fetch(id)
+    
+    if (!isLoaded) {
+        return <div className="container"><div className="loader">Chargement...</div></div>;
     }else if (isLoaded && (userdata ||activityData ||averageSessionsData ||performanceData )){
         return (
             <div className="container">
                 <Char name={userdata.userInfos.firstName}/>
                 <main>
                     <article>
-                        <div className="dailyactivity">
+                        <div className="dailyActivity">
                         <Barchart data={activityData.sessions}/>
                         </div>
-                        <div className="card-div">
+                        <div className="cardsCharts">
                             <Linechart data={averageSessionsData.sessions} />
                             <Radarchart data={performanceData.data} />
                             <Piechart data={userdata} />
@@ -49,7 +44,8 @@ function App (){ //
             </div>
         )
     }else if (isLoaded &&(!userdata ||!activityData ||!averageSessionsData ||!performanceData )){
-        return (<div className="error-message"><i class="fas fa-exclamation-triangle fa-5x"></i><div >L'utilisateur n'existe pas !</div></div>);
+        return (<div className="errorMessage">
+                    <div >L'utilisateur n'existe pas !</div></div>);
     }
 }
 

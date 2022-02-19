@@ -1,37 +1,35 @@
 header {
-    background-color: black;
-    color:white;
-    height:105px;
-    width:100%;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    box-sizing: border-box;
-    padding:0 2%;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
-  
-  }
-  
+  background-color: black;
+  color:white;
+  height:105px;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding:0 2%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 1);
+
   .logo {
-    // background: url("./images/logo.png");
+    background: url("../Media/logoSportsee.svg");
     background-size: cover;
     width:178px;
     height:60px;
   }
-  
+
   .navbar{
     width:85%;
     max-width: 1440px;
-  
+    
+    ul{
+      padding:0;
+      width:100%;
+      display:flex;
+      justify-content: space-around;
+
+      li {
+        font-size: 24px;
+      }
+    }
   }
-  
-  .navbar ul{
-    padding:0;
-    width:100%;
-    display:flex;
-    justify-content: space-around;
-  }
-  
-  .navbar li {
-    font-size: 24px;
-  }
+}

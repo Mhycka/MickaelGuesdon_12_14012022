@@ -1,6 +1,3 @@
-/**
- * Data use for test
- */
 
 
  export const user_Main_Mocked = [

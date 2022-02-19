@@ -7,27 +7,26 @@ import PropTypes from 'prop-types'
 */
 export default function Piechart(props) {
 
-    var score;
+    var result;
     if (props.data.score){
-         score = {score: props.data.score*100}
+         result = {score: props.data.score*100}
     } else {
-         score = {score: props.data.todayScore*100}  
+         result = {score: props.data.todayScore*100}  
     }
 
     let scoreData=[]
-    scoreData.push(score)
-    let startangle=90;
-    let endangle= (startangle+ (score.score*3.6))
+    scoreData.push(result)
+    let angleStart=90;
+    let angleFinish= (angleStart+ (result.score*3.6))
 
     return (
-        <div id ="piechart"className="card">
-            <div id="score-title">Score</div>
+        <div id ="pieChart"className="card">
+            <div id="resultTitle">Score</div>
             <PieChart width={258} height={263}>
             
-            <Pie data= {scoreData} dataKey="score"startAngle={startangle} endAngle={endangle} cx="50%" cy="50%" innerRadius={80} outerRadius={90} fill="#f00"/>
+            <Pie data= {scoreData} dataKey="score"startAngle={angleStart} endAngle={angleFinish} cx="50%" cy="50%" innerRadius={80} outerRadius={90} fill="#f00"/>
             </PieChart>
-            <div id="result"><p id="resultscore">{score.score}%</p><p>de votre objectif</p></div>
-
+            <div id="result"><p id="resultscore">{result.score}%</p><p>de votre objectif</p></div>
       </div>
     );
 }

@@ -9,15 +9,15 @@ import PropTypes from 'prop-types'
 function AsideCard({id,data,nutriment,type}){
 
     return (
-        <div className="aside-card">
-                            <div className="icon-container">
-                                <div id={id}></div>
-                            </div>
-                            <div>
-                                <p className="nutriment-data">{data}{type}</p>
-                                <p className="nutriment">{nutriment}</p>
-                            </div>
-                        </div>
+        <div className="asideCard">
+            <div className="iconContainer">
+                <div id={id}></div>
+            </div>
+            <div>
+                <p className="nutrimentData">{data}{type}</p>
+                <p className="nutriment">{nutriment}</p>
+            </div>
+        </div>
     )
 }
 

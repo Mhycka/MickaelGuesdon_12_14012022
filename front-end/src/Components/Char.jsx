@@ -6,11 +6,11 @@ import PropTypes from 'prop-types'
 function Char ({name}){
 
     return (
-        <div className="hero">
+        <div className="char">
             <div>  
-                <span className="title">Bonjour</span><span className="title red"> {name}  </span>
+                <span className="title">Bonjour</span><span className="title redTitle"> {name}  </span>
             </div>  
-            <p>Félicitation ! Vous avez explosé vos objectifs hier  !&nbsp;👏</p>
+            <p>Félicitation ! Vous avez explosé vos objectifs hier  !👏</p>
         </div>
     )
 }

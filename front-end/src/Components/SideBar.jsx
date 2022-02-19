@@ -2,15 +2,14 @@
 function SideBar() {
 
     return (
-        <div className="sidebar">
-            <div className="sidebar-div"></div>
-            <div className="sidebar-div">
-                <div className="icon" id="yoga-icon"></div>
-                <div className="icon" id="swim-icon"></div>
-                <div className="icon" id="bike-icon"></div>
-                <div className="icon" id="lift-icon"></div>
+        <div className="sideBar">
+            <div className="sidebarIcon">
+                <div className="icon" id="iconYoga"></div>
+                <div className="icon" id="iconSwim"></div>
+                <div className="icon" id="iconBike"></div>
+                <div className="icon" id="iconDumbbell"></div>
             </div>
-            <div className=" sidebar-div copyright">Copiryght, SportSee 2020</div>
+            <div className="copyright">Copiryght, SportSee 2020</div>
         </div>
     )
 }

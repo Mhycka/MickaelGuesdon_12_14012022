@@ -1,0 +1,74 @@
+aside {
+    width:258px;
+    display:flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    .asideCard {
+      box-sizing: border-box;
+      background-color: #FBFBFB;
+      border-radius: 5px;
+      max-width:258px;
+      min-width:258px;
+      height:124px;
+      margin-bottom: 40px;
+      padding:32px;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .iconContainer {
+        width:60px;
+        height:60px;
+        border-radius: 6px;
+        background-color:#fbeaea ;
+        margin-right:1%;
+
+        #calories, #proteines, #glucides, #lipides {
+          width:100%;
+          height:100%;
+        }
+        
+        #calories{
+          background: url('../Media/energyIcon.svg') no-repeat ;
+          background-position: center;
+          background-color: #fbeaea;
+        }
+        
+        #proteines {
+          background: url('../Media/chickenIcon.svg') no-repeat ;
+          background-position: center;
+          background-color: #e9f4fb
+        }
+        
+        #glucides {
+          background: url('../Media/appleIcon.svg') no-repeat ;
+          background-position: center;
+          background-color:#faf6e5 ;
+        }
+        
+        #lipides {
+          background: url('../Media/cheeseburgerIcon.svg') no-repeat ;
+          background-position: center;
+          background-color: #fbeaef;
+        }
+      }
+
+      .nutriment {
+        color: #74798C;
+        font-size:14px;
+      
+      }
+      
+      .nutrimentData {
+        font-weight:700px;
+        font-size:20px;
+      }
+    }
+  }
+    
+.loader {
+  font-size: 36px;
+  margin:0 auto;
+  color:lightgrey
+}

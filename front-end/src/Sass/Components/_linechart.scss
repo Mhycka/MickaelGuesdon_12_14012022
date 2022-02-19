@@ -1,23 +1,22 @@
-#line-chart {
+#lineChart {
     box-sizing: border-box;
     background-color:red;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-   
-    position:relative
-   
+    position:relative;
+
+    .lineChartTitle {
+      margin-left:34px;
+      width:147px;
+      height:48px;
+      font-size: 15px;
+      position:absolute;
+      top:30px;
+      z-index:99;
+    }
   }
-  .linechart-title {
-    margin-left:34px;
-    width:147px;
-    height:48px;
-    font-size: 15px;
-    position:absolute;
-    top:30px;
-    z-index:99;
-  }
- 
+  
   .recharts-cartesian-axis-line, .recharts-cartesian-axis-tick-line {
     stroke:rgba(255,0,0,0)
   }
