@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react'
 import { Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis } from 'recharts';
 import PropTypes from 'prop-types'
 
-/** Component of the radarchart. UseEffect change the data's kind number to string for better user experience 
+/** Component of the radarchart. UseEffect optimize the data's kind number to string for better user experience 
  * @param {object} data - the fetched userdata
 */
 function Radarchart ({data}) {

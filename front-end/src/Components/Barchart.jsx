@@ -19,7 +19,7 @@ function CustomTooltip2({ payload, active }) {
 }
 
  
-/** Barchart Component. The days are changed to fit in the chart.
+/** Barchart Components.
  *  @param {object} data - the fetched userdata
  */
 function Barchart({data}){

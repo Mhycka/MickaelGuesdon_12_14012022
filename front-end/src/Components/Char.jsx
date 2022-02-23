@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-/**Hero component
+/**Char component
  * @param {string} name- User's name
  */
 function Char ({name}){

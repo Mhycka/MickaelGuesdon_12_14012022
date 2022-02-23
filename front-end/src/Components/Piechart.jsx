@@ -2,7 +2,7 @@ import { PieChart, Pie } from 'recharts';
 import PropTypes from 'prop-types'
 
 
-/** Piechart Component. It checks the presence of props.data.score, if not props.data.todayScore take its place.
+/** Piechart Component. It checks the attendance of props.data.score, if not props.data.todayScore take its place.
  * * @param {object} data - the fetched userdata
 */
 export default function Piechart(props) {

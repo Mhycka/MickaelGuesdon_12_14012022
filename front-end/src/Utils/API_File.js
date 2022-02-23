@@ -1,6 +1,6 @@
 
 
- export const user_Main_Mocked = [
+ export const userMainMocked = [
     {
         id: 12,
         userInfos: {
@@ -33,7 +33,7 @@
     }
 ]
 
-export const user_Activities_Mocked = [
+export const userActivitiesMocked = [
     {
         userId: 12,
         sessions: [
@@ -116,7 +116,7 @@ export const user_Activities_Mocked = [
     }
 ]
 
-export const user_Average_Sessions_Mocked = [
+export const userAverageSessionsMocked = [
     {
         userId: 12,
         sessions: [
@@ -185,7 +185,7 @@ export const user_Average_Sessions_Mocked = [
     }
 ]
 
-export const user_Performance_Mocked = [
+export const userPerformanceMocked = [
     {
         userId: 12,
         kind: {

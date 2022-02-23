@@ -1,4 +1,4 @@
-/** Component of the left sidebar */
+/** Component of the left sidebar of website */
 function SideBar() {
 
     return (

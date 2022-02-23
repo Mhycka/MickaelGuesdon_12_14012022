@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 
-/**Component to render a temporary page to switch between the 2 userId.  */
+/**Component to make a temporary page to switch between the 2 userIds(for the model)  */
 function Home(){
     return (
         <div className='idCard'>

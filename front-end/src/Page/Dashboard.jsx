@@ -1,5 +1,6 @@
 import Char from '../Components/Char';
 import Fetch from '../Utils/fetch';
+// import DashboardContextProvider from '../Utils/fetchMoked';
 import { useParams } from "react-router-dom";
 import Linechart from '../Components/Linechart';
 import Piechart from '../Components/Piechart';
@@ -8,14 +9,19 @@ import Barchart from '../Components/Barchart';
 import AsideCard from '../Components/AsideCard';
 
 
-/** Component of the dashboard. It collect the id in the url page, and do a fetch. A loading page is displayed during the fetch. Throw error if needed */
+/** Dashboard component. It collects the id in the URL page and performs a fetch. A loading page is displayed during recovery. Throw an error if necessary*/
 
 
-function App (){ // 
+function Dashboard (){ // 
 
     const { id } = useParams();
    
-    const { userdata, averageSessionsData,performanceData, isLoaded,activityData} = Fetch(id)
+    const { userdata, averageSessionsData,performanceData, isLoaded,activityData} = Fetch(id);
+
+    // const { userdata, averageSessionsData,performanceData, isLoaded,activityData} = DashboardContextProvider(id);
+
+    // console.log(userdata, activityData, averageSessionsData, performanceData,isLoaded)
+
     
     if (!isLoaded) {
         return <div className="container"><div className="loader">Chargement...</div></div>;
@@ -49,4 +55,4 @@ function App (){ //
     }
 }
 
-export default App
+export default Dashboard

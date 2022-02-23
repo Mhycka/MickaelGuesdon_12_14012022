@@ -6,8 +6,6 @@ import Dashboard from './Page/Dashboard';
 import Home from './Page/home'
 
 function App (){
-
-
   return (
     <React.StrictMode>
       <Header />

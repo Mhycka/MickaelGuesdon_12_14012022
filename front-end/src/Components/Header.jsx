@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 
 
-/** Header Component with a navbar*/
+/** Header component featuring website logo and navigation bar*/
 
 function Header() {
 

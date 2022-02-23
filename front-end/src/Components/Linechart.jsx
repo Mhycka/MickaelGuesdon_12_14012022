@@ -21,7 +21,7 @@ CustomTooltip.propTypes = {
   payload: PropTypes.array,
 }
  
-/** LineChart Component. The days are changed to fit in the chart.
+/** LineChart Component.
  * * @param {object} data - the fetched userdata
  */
 
@@ -29,10 +29,7 @@ function Linechart({data}){
   
   const [loadLineChart,setLoad]=useState(false)
 
-  //change the days of the data to be more explicit with the letters of the days
   useEffect(() => {
-    const dates=["L","M","M","J","V","S","D"]
-    data.map((date)=>(date.day=dates[date.day-1]))
     setLoad(true)
   },[data])
 
