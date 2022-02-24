@@ -1,33 +1,45 @@
-@media screen and (max-width:1250px) {
+@media screen and (max-width:1024px) {
 
-    aside{
-      flex-direction:row;
-      justify-content: space-between;
-      width:100%;
-      column-gap: 5px;
-      flex-wrap: wrap;
-    }
-  
-    main {
-      flex-direction:column;
-      align-items: center;
-    }
-  
-    .aside-card {  
-     padding:2%;
-     min-width:195px;
-     margin-bottom:0;
-    }
-    
-    article{
-      width:100%;
-    }
-  
-    .hero p {
-      margin-bottom:20px;
+  aside{
+    flex-direction:row;
+    justify-content: space-around;
+    width:100%;
+
+    .asideCard{
+      max-width: 200px;
+      min-width: 200px;
+      height: auto;
+      margin-bottom: 0;
+      padding: 0;
     }
   }
-  
-  svg {
-    width:100% !important
+
+  main {
+    flex-direction:column;
+    align-items: center;
   }
+  
+  article{
+    width:100%;
+  }
+
+  .hero p {
+    margin-bottom:20px;
+  }
+
+  .container {
+    padding: 29px 0 0 127px;
+    article {
+      width: auto;
+    }
+  }
+
+  .sideBar{
+    min-height: 967px;
+  }
+}
+
+svg {
+  width:100% !important
+}
+
