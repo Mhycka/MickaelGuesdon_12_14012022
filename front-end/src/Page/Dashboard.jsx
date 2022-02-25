@@ -1,6 +1,5 @@
 import Char from '../Components/Char';
 import Fetch from '../Utils/fetch';
-// import DashboardContextProvider from '../Utils/fetchMoked';
 import { useParams } from "react-router-dom";
 import Linechart from '../Components/Linechart';
 import Piechart from '../Components/Piechart';
@@ -17,11 +16,6 @@ function Dashboard (){ //
     const { id } = useParams();
    
     const { userdata, averageSessionsData,performanceData, isLoaded,activityData} = Fetch(id);
-
-    // const { userdata, averageSessionsData,performanceData, isLoaded,activityData} = DashboardContextProvider(id);
-
-    // console.log(userdata, activityData, averageSessionsData, performanceData,isLoaded)
-
     
     if (!isLoaded) {
         return <div className="container"><div className="loader">Chargement...</div></div>;
