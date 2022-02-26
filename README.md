@@ -18,17 +18,15 @@ Recommended text editor: Visual Studio Code
 
 <br/><br/>
 
-## Installing and launching back-end
-
-<br/>
-Clone the repository of OpenClassrooms-Student-Center/P9-front-end-dashboard:  
-
-
-### `git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard.git`
+Clone the repository of  Mhycka/ MickaelGuesdon_12_14012022
+### `git clone https://github.com/Mhycka/MickaelGuesdon_12_14012022.git`
 <br/><br/>
 
+## Installing and launching back-end
 
-Inside this back-end repository, install dependencies:
+<br/><br/>
+
+In this repository, go to the bak-end folder and install the dependencies with a terminal:
 ### `npm install`
 
 <br/><br/>
@@ -38,25 +36,23 @@ Launch back-end on port 3000 (default port):
 
 <br/><br/>
 
+Back-end specific documentation with requests and prerequisites are available at this link:
+### `git clone https://github.com/OpenClassrooms-Student-Center/P9-front-end-dashboard#readme`
+
+<br/><br/>
+
 ## Installing and launching front-end
 
-Clone the repository of  Mhycka/ MickaelGuesdon_12_14012022
-### `git clone https://github.com/Mhycka/MickaelGuesdon_12_14012022.git`
 <br/><br/>
 
-
-
-Inside this front-end repository, install dependencies:
+In this repository, go to the fron-end folder and install the dependencies with an another terminal:
 ### `npm install`
 <br/><br/>
-
 
 
 Launch front-end on port 3001:
 ### `npm start`
 <br/><br/>
-
-
 
 Front-end is now rendered at URL http://localhost:3001.
 
